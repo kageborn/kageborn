@@ -8,48 +8,150 @@
 </head>
 <body>
 
-<header>
-  <div class="container">
-    <div class="logo">
+<header class="site-header">
+  <div class="container header-row">
+    <div class="brand">
       <img src="png/kageborn" alt="kageborn studios">
+      <span>kageborn studios</span>
     </div>
+
+    <nav>
+      <a href="#home">home</a>
+      <a href="#game">game</a>
+      <a href="#community">community</a>
+    </nav>
   </div>
 </header>
 
 <main>
 
-<section class="hero">
-  <div class="container">
-    <div class="hero-card">
+<section class="hero" id="home">
+  <div class="container hero-grid">
 
-      <img class="game-photo" src="png/game" alt="kageborn game">
-
+    <div class="hero-text">
+      <span class="tag">roblox game studio</span>
       <h1>kageborn</h1>
-
-      <p class="hero-sub">
-        jogue dia 11 de junho.
+      <p>
+        a new ninja roblox experience focused on progression, combat,
+        quests, ranks and community competition.
       </p>
 
-      <div class="community-frame">
-        <h2>join community</h2>
-        <p>acompanhe novidades, atualizações e lançamento.</p>
-
-        <div class="hero-buttons">
-          <a href="https://discord.gg/M98G35YK" target="_blank" class="btn btn-primary" rel="noopener">discord</a>
-          <a href="https://youtube.com/" target="_blank" class="btn btn-secondary" rel="noopener">youtube</a>
-          <a href="https://www.roblox.com/pt/games/133584961412914" target="_blank" class="btn btn-secondary" rel="noopener">roblox</a>
-        </div>
+      <div class="launch-box">
+        launching june 11, 2026
       </div>
 
+      <div class="buttons">
+        <a href="https://www.roblox.com/pt/games/133584961412914" target="_blank" rel="noopener" class="btn primary">play on roblox</a>
+        <a href="https://discord.gg/M98G35YK" target="_blank" rel="noopener" class="btn secondary">join discord</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="png/game" alt="kageborn game">
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <span>about studio</span>
+      <h2>kageborn studios</h2>
+      <p>
+        kageborn studios is an independent roblox game development studio
+        focused on building polished, replayable and community-driven experiences.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section blue-section" id="game">
+  <div class="container">
+    <div class="section-title">
+      <span>about the game</span>
+      <h2>enter the ninja world</h2>
+      <p>
+        explore villages, complete missions, defeat enemies, unlock abilities
+        and grow stronger through ranks and progression.
+      </p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>progression</h3>
+        <p>level up, unlock abilities and improve your character.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>combat</h3>
+        <p>fight enemies using weapons, skills and movement.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>quests</h3>
+        <p>complete missions to earn rewards and advance in the world.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>ranks</h3>
+        <p>start as a ninja and progress through stronger ranks.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>multiplayer</h3>
+        <p>play with other players and compete inside the experience.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>updates</h3>
+        <p>new content, enemies and systems planned after launch.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section gallery-section">
+  <div class="container">
+    <div class="section-title">
+      <span>media</span>
+      <h2>game preview</h2>
+      <p>official preview images from the kageborn experience.</p>
+    </div>
+
+    <div class="gallery-grid">
+      <img src="png/game1" alt="kageborn preview 1">
+      <img src="png/game2" alt="kageborn preview 2">
+      <img src="png/game3" alt="kageborn preview 3">
+    </div>
+  </div>
+</section>
+
+<section class="section community-section" id="community">
+  <div class="container">
+    <div class="community-box">
+      <div>
+        <span>community</span>
+        <h2>join our community</h2>
+        <p>
+          follow updates, announcements, development news and launch information.
+        </p>
+      </div>
+
+      <div class="community-links">
+        <a href="https://discord.gg/M98G35YK" target="_blank" rel="noopener">discord</a>
+        <a href="https://youtube.com/" target="_blank" rel="noopener">youtube</a>
+        <a href="https://www.roblox.com/pt/games/133584961412914" target="_blank" rel="noopener">roblox</a>
+      </div>
     </div>
   </div>
 </section>
 
 </main>
 
-<footer class="site-footer">
+<footer>
   <div class="container footer-row">
-    <div>© 2026 kageborn studios. all rights reserved.</div>
+    <p>© 2026 kageborn studios. all rights reserved.</p>
   </div>
 </footer>
 
