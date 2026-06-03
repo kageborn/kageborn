@@ -1,6 +1,5 @@
-```html
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,16 +11,8 @@
 <header>
   <div class="container">
     <div class="logo">
-      <img src="png/kageborn" alt="kageborn studios logo">
+      <img src="png/kageborn" alt="kageborn studios">
     </div>
-
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">home</a></li>
-        <li><a href="games.html">our games</a></li>
-        <li><a href="contact.html">contact</a></li>
-      </ul>
-    </nav>
   </div>
 </header>
 
@@ -30,89 +21,26 @@
 <section class="hero">
   <div class="container">
     <div class="hero-card">
-      <img class="hero-logo" src="png/kageborn" alt="kageborn studios">
+
+      <img class="game-photo" src="png/game" alt="kageborn game">
+
+      <h1>kageborn</h1>
 
       <p class="hero-sub">
-        roblox experiences focused on progression, competition, and retention.
+        jogue dia 11 de junho.
       </p>
 
-      <div class="hero-buttons">
-        <a href="games.html" class="btn btn-primary">explore our games</a>
-        <a href="https://discord.gg/M98G35YK" target="_blank" class="btn btn-secondary" rel="noopener">join our community</a>
-        <a href="contact.html" class="btn btn-secondary">partnerships</a>
-      </div>
-    </div>
-  </div>
-</section>
+      <div class="community-frame">
+        <h2>join community</h2>
+        <p>acompanhe novidades, atualizações e lançamento.</p>
 
-<section class="section" id="featured-games">
-  <div class="container">
-    <div class="section-title">
-      <h2>our games</h2>
-      <p></p>
-    </div>
-
-    <div class="games-grid">
-
-      <div class="game-tile">
-        <img class="game-icon" src="png/1" alt="climb the tower of the scary brainrot">
-        <h3>climb the tower of the scary brainrot</h3>
-
-        <div class="plays-pill">
-          <span class="play-dot"></span>
-          <span><b>11</b> plays</span>
-        </div>
-
-        <a class="view-btn" href="https://www.roblox.com/pt/games/133584961412914/climb-the-tower-of-the-scary-brainrot" target="_blank" rel="noopener">view game</a>
-      </div>
-
-      <div class="game-tile">
-        <img class="game-icon" src="png/kageborn" alt="you vs peter">
-        <h3>you vs peter</h3>
-
-        <p class="co-dev">co-developed with pixelcore</p>
-
-        <div class="plays-pill">
-          <span class="play-dot"></span>
-          <span><b>22</b> plays</span>
-        </div>
-
-        <a class="view-btn" href="https://www.roblox.com/pt/games/89558340223426/you-vs-peter" target="_blank" rel="noopener">view game</a>
-      </div>
-
-      <div class="game-tile">
-        <img class="game-icon" src="png/kageborn" alt="coming soon">
-        <h3>coming soon</h3>
-
-        <div class="plays-pill">
-          <span class="play-dot"></span>
-          <span><b>30</b> plays</span>
-        </div>
-
-        <a class="view-btn" href="games.html">view game</a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section class="section community-section">
-  <div class="container">
-    <div class="community-box">
-      <div class="community-left">
-        <span class="community-small">get the latest updates and more.</span>
-        <h2>join our community today!</h2>
-
-        <div class="community-buttons">
-          <a href="https://discord.gg/M98G35YK" target="_blank" class="community-btn discord" rel="noopener">discord</a>
-          <a href="https://twitter.com/" target="_blank" class="community-btn twitter" rel="noopener">twitter</a>
-          <a href="https://youtube.com/" target="_blank" class="community-btn youtube" rel="noopener">youtube</a>
+        <div class="hero-buttons">
+          <a href="https://discord.gg/M98G35YK" target="_blank" class="btn btn-primary" rel="noopener">discord</a>
+          <a href="https://youtube.com/" target="_blank" class="btn btn-secondary" rel="noopener">youtube</a>
+          <a href="https://www.roblox.com/pt/games/133584961412914" target="_blank" class="btn btn-secondary" rel="noopener">roblox</a>
         </div>
       </div>
 
-      <div class="community-right">
-        <img src="png/kageborn" alt="kageborn community">
-      </div>
     </div>
   </div>
 </section>
@@ -122,14 +50,8 @@
 <footer class="site-footer">
   <div class="container footer-row">
     <div>© 2026 kageborn studios. all rights reserved.</div>
-
-    <div class="footer-links-inline">
-      <a href="games.html">games</a>
-      <a href="contact.html">contact</a>
-    </div>
   </div>
 </footer>
 
 </body>
 </html>
-```
