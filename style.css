@@ -188,62 +188,47 @@ nav a:hover{
 }
 
 .about-section{
-    background:#07111f;
+    background:#050b16;
+    padding:90px 0;
 }
 
-.about-card{
-    background:linear-gradient(135deg,#0d2240,#123463);
-    border:1px solid rgba(96,165,250,.22);
-    border-radius:24px;
-    padding:45px;
-    display:grid;
-    grid-template-columns:360px 1fr;
-    gap:40px;
-    align-items:center;
+.about-title{
+    text-align:center;
+    margin-bottom:45px;
 }
 
-.about-tag{
-    color:#60a5fa;
-    text-transform:uppercase;
-    font-weight:700;
-    display:block;
-    margin-bottom:10px;
-}
-
-.about-left h2{
-    font-size:42px;
-    line-height:1.1;
-}
-
-.about-right p{
-    color:#dbeafe;
-    font-size:18px;
-    margin-bottom:25px;
-}
-
-.about-points{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
-}
-
-.about-points div{
-    background:rgba(255,255,255,.06);
-    border:1px solid rgba(255,255,255,.08);
-    padding:18px;
-    border-radius:14px;
-}
-
-.about-points strong{
-    display:block;
-    margin-bottom:8px;
+.about-title h2{
+    font-size:52px;
     color:#ffffff;
+    font-weight:800;
+    text-transform:capitalize;
 }
 
-.about-points span{
-    color:#cbd5e1;
+.about-title span{
+    display:block;
+    width:80px;
+    height:4px;
+    margin:18px auto 0;
+    border-radius:999px;
+    background:linear-gradient(90deg,#2563eb,#a855f7);
 }
 
+.about-box{
+    max-width:900px;
+    margin:0 auto;
+    background:#111827;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    padding:48px 55px;
+    text-align:center;
+}
+
+.about-box p{
+    color:#d1d5db;
+    font-size:20px;
+    line-height:1.7;
+    font-weight:700;
+}
 .community-section{
     background:#08182d;
 }
