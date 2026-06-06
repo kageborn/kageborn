@@ -78,7 +78,7 @@ nav a:hover{
 .hero-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:50px;
+    gap:70px;
     align-items:center;
 }
 
@@ -141,8 +141,14 @@ nav a:hover{
     transform:translateY(-2px);
 }
 
+.hero-image{
+    display:flex;
+    justify-content:flex-end;
+}
+
 .hero-image img{
     width:100%;
+    max-width:650px;
     display:block;
     border-radius:20px;
     border:1px solid rgba(59,130,246,.20);
@@ -187,6 +193,47 @@ nav a:hover{
     border:1px solid rgba(59,130,246,.15);
 }
 
+.about-section{
+    background:#050b16;
+    padding:100px 0;
+}
+
+.about-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.about-title h2{
+    font-size:56px;
+    font-weight:800;
+    color:#ffffff;
+}
+
+.about-title span{
+    display:block;
+    width:80px;
+    height:4px;
+    margin:18px auto 0;
+    border-radius:999px;
+    background:linear-gradient(90deg,#2563eb,#a855f7);
+}
+
+.about-box{
+    max-width:1050px;
+    margin:0 auto;
+    background:linear-gradient(135deg,#0c1730,#111d3d);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+    padding:50px;
+    text-align:center;
+}
+
+.about-box p{
+    color:#d1d5db;
+    font-size:22px;
+    line-height:1.8;
+    font-weight:600;
+}
 
 .community-section{
     background:#08182d;
@@ -238,19 +285,12 @@ footer{
 }
 
 @media(max-width:900px){
+
     .hero-grid{
         grid-template-columns:1fr;
     }
 
     .gallery-grid{
-        grid-template-columns:1fr;
-    }
-
-    .about-card{
-        grid-template-columns:1fr;
-    }
-
-    .about-points{
         grid-template-columns:1fr;
     }
 
@@ -266,5 +306,17 @@ footer{
 
     .hero h1{
         font-size:48px;
+    }
+
+    .about-title h2{
+        font-size:42px;
+    }
+
+    .about-box{
+        padding:35px;
+    }
+
+    .about-box p{
+        font-size:18px;
     }
 }
