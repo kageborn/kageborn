@@ -83,13 +83,18 @@ nav a:hover{
 }
 
 .tag{
-    display:inline-block;
-    padding:8px 16px;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:10px 20px;
     border-radius:999px;
-    background:#1d4ed8;
+    background:linear-gradient(135deg,#2563eb,#3b82f6);
+    color:#ffffff;
     font-size:14px;
     font-weight:700;
+    letter-spacing:.3px;
     margin-bottom:20px;
+    box-shadow:0 8px 25px rgba(37,99,235,.35);
 }
 
 .hero h1{
