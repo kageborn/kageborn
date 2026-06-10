@@ -56,6 +56,7 @@ body{
 nav{
     display:flex;
     gap:25px;
+    flex-wrap:wrap;
 }
 
 nav a{
@@ -90,7 +91,6 @@ nav a:hover{
     letter-spacing:1px;
     text-transform:uppercase;
     margin-bottom:20px;
-}
 }
 
 .hero h1{
@@ -218,7 +218,6 @@ nav a:hover{
     border-radius:999px;
     background:#2563eb;
 }
-}
 
 .about-box{
     max-width:1050px;
@@ -228,6 +227,11 @@ nav a:hover{
     border-radius:22px;
     padding:50px;
     text-align:center;
+}
+
+.about-box h3{
+    font-size:32px;
+    margin-bottom:12px;
 }
 
 .about-box p{
@@ -281,9 +285,28 @@ footer{
 }
 
 .footer-row{
-    text-align:center;
     padding:25px 0;
     color:#94a3b8;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.footer-row h3{
+    color:white;
+    margin-bottom:6px;
+}
+
+.footer-row a{
+    color:#94a3b8;
+    text-decoration:none;
+    margin-left:18px;
+    font-weight:700;
+}
+
+.footer-row a:hover{
+    color:#60a5fa;
 }
 
 @media(max-width:900px){
@@ -304,6 +327,16 @@ footer{
     .header-row{
         flex-direction:column;
         gap:15px;
+    }
+
+    .footer-row{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .footer-row a{
+        margin:8px;
+        display:inline-block;
     }
 
     .hero h1{
