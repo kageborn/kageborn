@@ -83,6 +83,14 @@ nav a:hover{
     align-items:center;
 }
 
+.hero img{
+    width:100%;
+    max-width:650px;
+    display:block;
+    border-radius:20px;
+    border:1px solid rgba(59,130,246,.20);
+}
+
 .tag{
     display:block;
     color:#94a3b8;
@@ -104,37 +112,14 @@ nav a:hover{
     margin-bottom:25px;
 }
 
-.launch-box{
-    display:inline-block;
-    padding:15px 24px;
-    background:#102c57;
-    border:1px solid #2563eb;
-    border-radius:14px;
-    font-weight:700;
-    margin-bottom:30px;
-}
-
-.buttons{
-    display:flex;
-    gap:15px;
-    flex-wrap:wrap;
-}
-
 .btn{
+    display:inline-block;
     padding:14px 24px;
     border-radius:12px;
     text-decoration:none;
     font-weight:700;
     transition:.2s;
-}
-
-.primary{
     background:#2563eb;
-    color:white;
-}
-
-.secondary{
-    background:#152844;
     color:white;
 }
 
@@ -142,42 +127,25 @@ nav a:hover{
     transform:translateY(-2px);
 }
 
-.hero-image{
-    display:flex;
-    justify-content:flex-end;
-}
-
-.hero-image img{
-    width:100%;
-    max-width:650px;
-    display:block;
-    border-radius:20px;
-    border:1px solid rgba(59,130,246,.20);
-}
-
 .section{
     padding:90px 0;
 }
 
-.section-title{
-    text-align:center;
-    max-width:800px;
-    margin:auto auto 50px;
+.section h1{
+    font-size:52px;
+    margin-bottom:20px;
 }
 
-.section-title span{
-    color:#60a5fa;
-    font-weight:700;
-    text-transform:uppercase;
+.section h2{
+    font-size:36px;
+    margin-bottom:15px;
 }
 
-.section-title h2{
-    font-size:42px;
-    margin:10px 0;
-}
-
-.section-title p{
-    color:#cbd5e1;
+.section p{
+    color:#d1d5db;
+    font-size:20px;
+    line-height:1.7;
+    margin-bottom:14px;
 }
 
 .gallery-grid{
@@ -194,123 +162,15 @@ nav a:hover{
     border:1px solid rgba(59,130,246,.15);
 }
 
-.about-section{
-    background:#050b16;
-    padding:100px 0;
-}
-
-.about-title{
-    text-align:center;
-    margin-bottom:45px;
-}
-
-.about-title h2{
-    font-size:56px;
-    font-weight:800;
-    color:#ffffff;
-}
-
-.about-title span{
-    display:block;
-    width:90px;
-    height:4px;
-    margin:18px auto 0;
-    border-radius:999px;
-    background:#2563eb;
-}
-
-.about-box{
-    max-width:1050px;
-    margin:0 auto;
-    background:linear-gradient(135deg,#0c1730,#111d3d);
-    border:1px solid rgba(255,255,255,.08);
-    border-radius:22px;
-    padding:50px;
-    text-align:center;
-}
-
-.about-box h3{
-    font-size:32px;
-    margin-bottom:12px;
-}
-
-.about-box p{
-    color:#d1d5db;
-    font-size:22px;
-    line-height:1.8;
-    font-weight:600;
-}
-
-.community-section{
-    background:#08182d;
-}
-
-.community-box{
-    background:linear-gradient(135deg,#0d2240,#123463);
-    border-radius:24px;
-    padding:40px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:30px;
-}
-
-.community-box h2{
-    font-size:38px;
-    margin:10px 0;
-}
-
-.community-box p{
-    color:#dbeafe;
-}
-
-.community-links{
-    display:flex;
-    gap:15px;
-    flex-wrap:wrap;
-}
-
-.community-links a{
-    text-decoration:none;
-    background:#2563eb;
-    color:white;
-    padding:14px 22px;
-    border-radius:12px;
-    font-weight:700;
-}
-
 footer{
     border-top:1px solid rgba(59,130,246,.15);
     background:#050d18;
-}
-
-.footer-row{
-    padding:25px 0;
+    text-align:center;
+    padding:25px;
     color:#94a3b8;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:20px;
-}
-
-.footer-row h3{
-    color:white;
-    margin-bottom:6px;
-}
-
-.footer-row a{
-    color:#94a3b8;
-    text-decoration:none;
-    margin-left:18px;
-    font-weight:700;
-}
-
-.footer-row a:hover{
-    color:#60a5fa;
 }
 
 @media(max-width:900px){
-
     .hero-grid{
         grid-template-columns:1fr;
     }
@@ -319,39 +179,12 @@ footer{
         grid-template-columns:1fr;
     }
 
-    .community-box{
-        flex-direction:column;
-        text-align:center;
-    }
-
     .header-row{
         flex-direction:column;
         gap:15px;
     }
 
-    .footer-row{
-        flex-direction:column;
-        text-align:center;
-    }
-
-    .footer-row a{
-        margin:8px;
-        display:inline-block;
-    }
-
     .hero h1{
         font-size:48px;
-    }
-
-    .about-title h2{
-        font-size:42px;
-    }
-
-    .about-box{
-        padding:35px;
-    }
-
-    .about-box p{
-        font-size:18px;
     }
 }
