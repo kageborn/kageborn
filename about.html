@@ -1,15 +1,105 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
 <head>
-<title>about</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Kageborn Studios</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
+
 <body>
-<section class="section">
-<div class="container">
-<h1>about us</h1>
-<p>kageborn studios is an independent game studio focused on creating original gaming experiences.</p>
-</div>
-</section>
+    <div class="custom-gradient-glow" id="bgGlow"></div>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="https://matheuzera.github.io/KagebornStudios/" class="logo">KAGEBORN<span>&nbsp STUDIOS</span></a>
+            <nav class="nav-links">
+                <a href="https://matheuzera.github.io/KagebornStudios/" class="nav-item ">Início</a>
+                <a href="kageborn" class="nav-item ">Kageborn</a>
+                <a href="community" class="nav-item active">Comunidade</a>
+                <a href="team" class="nav-item ">Equipe</a>
+                <a href="about" class="nav-item ">Sobre</a>
+                <a href="credits" class="nav-item ">Créditos</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <section class="page-header reveal">
+            <div class="container">
+                <h1>Nossa <span>História</span></h1>
+                <p>Da ideia inicial em uma garagem até um estúdio estabelecido, conheça os princípios que regem a
+                    Kageborn Studios.</p>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="container">
+                <div class="about-content glass-card reveal text-center-mobile">
+                    <h2>Nossa Filosofia de Desenvolvimento</h2>
+                    <p>A Kageborn Studios foi fundada em 2021 com uma premissa muito simples, mas poderosa:
+                        <strong>jogos devem ser criados com respeito ao tempo e à inteligência do jogador.</strong>
+                    </p>
+                    <p>Nós abominamos mecânicas predadoras, microtransações abusivas ou narrativas rasas feitas apenas
+                        para preencher espaço. Cada centímetro dos nossos mapas, cada linha de diálogo e cada algoritmo
+                        de IA é meticulosamente revisado para garantir excelência.</p>
+
+                    <h3 class="mt-4">Ambiente de Trabalho Sustentável</h3>
+                    <p>Acreditamos firmemente que o "crunch" (horas extras abusivas) destrói a criatividade. Somos
+                        defensores de um ambiente de trabalho saudável, horários flexíveis e diversidade. Porque mentes
+                        descansadas e valorizadas criam mundos mais ricos e códigos mais limpos.</p>
+
+                    <h3 class="mt-4">A Tecnologia como Ferramenta da Arte</h3>
+                    <p>Em vez de usar motores gráficos genéricos, construímos soluções customizadas sempre que
+                        necessário para que a tecnologia se curve à nossa visão artística, e não o contrário. Isso
+                        resulta em jogos altamente otimizados e com estilos visuais únicos que não envelhecem.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-top">
+            <div class="footer-brand">
+                <h2 class="logo">KAGEBORN<span>STUDIOS</span></h2>
+                <p>Criando mundos imersivos, narrativas profundas e experiências de próxima geração. Projetado com
+                    paixão e tecnologia.</p>
+            </div>
+            <div class="footer-links-grid">
+                <div class="footer-column">
+                    <h4>Estúdio</h4>
+                    <a href="kageborn">Universo Kageborn</a>
+                    <a href="about">Nossa Filosofia</a>
+                    <a href="team">Carreiras</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Conecte-se</h4>
+                    <a href="comunidade">Discord Oficial</a>
+                    <a href="comunidade">YouTube</a>
+                    <a href="comunidade">Twitter / X</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; <span id="current-year" style="color: #ffffff !important"></span> Kageborn Studios. Todos os
+                    direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
