@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team | Kageborn Studios</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="custom-gradient-glow" id="bgGlow"></div>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="https://matheuzera.github.io/KagebornStudios/" class="logo">KAGEBORN<span>&nbsp STUDIOS</span></a>
+            <nav class="nav-links">
+                <a href="https://matheuzera.github.io/KagebornStudios/" class="nav-item ">Início</a>
+                <a href="kageborn" class="nav-item ">Kageborn</a>
+                <a href="community" class="nav-item active">Comunidade</a>
+                <a href="team" class="nav-item ">Equipe</a>
+                <a href="about" class="nav-item ">Sobre</a>
+                <a href="credits" class="nav-item ">Créditos</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <section class="page-header reveal">
+            <div class="container">
+                <h1>Mentes <span>Criativas</span></h1>
+                <p>Nossa equipe é formada por veteranos da indústria e novos talentos brilhantes, unidos pela paixão de
+                    criar jogos inesquecíveis.</p>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <div class="container">
+                <div class="team-grid reveal">
+
+                    <div class="team-card glass-card">
+                        <img src="caminho/foto-elena.jpg" alt="Dusty Img" class="avatar">
+                        <h3>Elena Rostova</h3>
+                        <span class="role">Direção do Studio</span>
+                        <p>Mestre na técnica de iluminação chiaroscuro digital. Elena é a responsável pela identidade
+                            visual sombria, majestosa e inconfundível do nosso universo.</p>
+                    </div>
+
+                    <div class="team-card glass-card">
+                        <img id="avatar-arthur" src="" alt="Avatar" class="avatar">
+                        <h3>MatheuZera</h3>
+                        <span class="role">Website Design / Dev</span>
+                        <p>Criador de Páginas da Web (html, css e js), Front-End profissional e Configurador de
+                            Servidores do Discord, técnico em T.I e Conhecimento sobre Hardware e Softwares Gerais.</p>
+                    </div>
+
+                    <script>
+                        const userId = "771887741678911508"; // Coloque o ID real aqui
+                        const imgElement = document.getElementById('avatar-arthur');
+
+                        async function loadLanyardAvatar() {
+                            try {
+                                // Consulta a API pública do Lanyard
+                                const res = await fetch(`https://api.lanyard.rest/v1/users/${userId}`);
+                                const json = await res.json();
+
+                                if (json.success && json.data.discord_user) {
+                                    const user = json.data.discord_user;
+                                    const avatarHash = user.avatar;
+
+                                    if (avatarHash) {
+                                        const ext = avatarHash.startsWith('a_') ? 'gif' : 'png';
+                                        imgElement.src = `https://cdn.discordapp.com/avatars/${userId}/${avatarHash}.${ext}?size=512`;
+                                    } else {
+                                        // Sem foto, puxa imagem padrão
+                                        imgElement.src = `https://cdn.discordapp.com/embed/avatars/0.png`;
+                                    }
+                                }
+                            } catch (error) {
+                                console.error("Falha ao carregar a foto:", error);
+                            }
+                        }
+
+                        // Executa a função
+                        loadLanyardAvatar();
+                    </script>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-top">
+            <div class="footer-brand">
+                <h2 class="logo">KAGEBORN<span>STUDIOS</span></h2>
+                <p>Criando mundos imersivos, narrativas profundas e experiências de próxima geração. Projetado com
+                    paixão e tecnologia.</p>
+            </div>
+            <div class="footer-links-grid">
+                <div class="footer-column">
+                    <h4>Estúdio</h4>
+                    <a href="kageborn.html">Universo Kageborn</a>
+                    <a href="sobre.html">Nossa Filosofia</a>
+                    <a href="equipe.html">Carreiras</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Conecte-se</h4>
+                    <a href="comunidade.html">Discord Oficial</a>
+                    <a href="comunidade.html">YouTube</a>
+                    <a href="comunidade.html">Twitter / X</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; <span id="current-year" style="color: #ffffff !important"></span> Kageborn Studios. Todos os
+                    direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
