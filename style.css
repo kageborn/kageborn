@@ -1,19 +1,30 @@
 /* ==========================================================================
-   VARIÁVEIS - KAGEBORN STUDIOS
+   VARIÁVEIS - KAGEBORN STUDIOS (Estilo Roblox XP Farm)
    ========================================================================== */
 :root {
-    --bg-dark: #06080c;
-    --surface: #10141c;
-    --surface-light: #1a202c;
-    --accent: #3b82f6;
-    /* Azul energético e limpo */
-    --accent-hover: #60a5fa;
-    --text-main: #f8fafc;
+    /* Fundos puxados para um roxo/azul marinho muito escuro, estilo "Void/Abismo" */
+    --bg-dark: #0b0914; 
+    --surface: #151122; 
+    --surface-light: #201a33; 
+
+    /* Verde "Toxic/XP" vibrante no lugar do azul corporativo */
+    --accent: #22c55e; 
+    --accent-hover: #4ade80; 
+    
+    /* Adicionando uma cor secundária para botões ou destaques (Ex: Rebirth) */
+    --secondary: #a855f7; 
+
+    --text-main: #ffffff;
     --text-muted: #94a3b8;
-    --border: rgba(255, 255, 255, 0.08);
-    --border-hover: rgba(255, 255, 255, 0.2);
-    --transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
-    --font-main: 'Plus Jakarta Sans', sans-serif;
+    
+    /* Bordas com um leve tom do verde de XP para dar uma sensação de "item mágico" */
+    --border: rgba(34, 197, 94, 0.15); 
+    --border-hover: rgba(34, 197, 94, 0.4); 
+    
+    --transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    
+    /* Mudando para uma fonte mais grossa e arredondada */
+    --font-main: 'Nunito', sans-serif; 
 }
 
 /* ==========================================================================
